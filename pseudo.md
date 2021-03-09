@@ -34,6 +34,7 @@ container
 
 
 
+
 2. What goes in model
 
 Whos turn it is. string version "x" || "o"- if its x switch to o. 
@@ -114,6 +115,91 @@ display the final game state
 display the final game start
 restart click event listener
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+Model
+
+class TicTacToe {
+  constructor() {
+        board - Array?
+        current player = x
+        finished?  
+        
+
+if there was a move
+update tile
+check for winner
+check for tie
+   
+  }
+  array of clicks
+
+ switch user
+
+repeat until winner or tie
+  
+  winner() {
+    const lines = [
+      [0, 1, 2],
+      [3, 4, 5],
+      [6, 7, 8],
+      [0, 3, 6],
+      [1, 4, 7],
+      [2, 5, 8],
+      [0, 4, 8],
+      [2, 4, 6],
+    ];
+
+   
+    if (winner) {
+      
+    }
+
+    return winner;
+  }
+
+  draw() {
+    const draw = 
+
+    if (tie) {
+      
+    }
+
+    return tie;
+  }
+
+  switchPlayer() {
+    currentPlayer = o  
+  }
+}
+
+
+
+
+
+View 
+
+
+
+
+
+
+
+
+
+
+Controller
 
 
 
