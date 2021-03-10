@@ -134,7 +134,9 @@ class TicTacToe {
   constructor() {
         board - Array?
         current player = x
-        finished?  
+        finished? 
+        counter = 0; ?? 
+        array of clicks?? either array or counter
         
 
 if there was a move
@@ -143,7 +145,7 @@ check for winner
 check for tie
    
   }
-  array of clicks
+  
 
  switch user
 
@@ -185,28 +187,52 @@ repeat until winner or tie
 }
 
 
+logic
+what happens in initilize
+when initialize, render first. know how many tiles
+
+
+ 
+View
+
+load empty board- how do you get it.. function what does 
+create row of 3
+create column of 3
+row and columns creat tiles
+create an element for current game state
+create reset button
+
+after each play 
+update board and tiles
+lock used tiles
+switch player
 
 
 
-View 
 
+Model
 
-
-
-
-
-
-
-
+function to initialize game
+track current state of game by bounting positive number of turns... counter
+track current state of board to check for wins
+switch to current player, whos turn it is
+declare function to check win or tie
+update list of all possible winning board tile combinations
+check all winning combos to see if the given combinations/paused tiles in the board array
+    
 
 Controller
 
-
-
-
-
-
-
-
-
+update board adn tiles after each players turn
+move the game forward on each clicks
+update game state
+update board
+when 5 or more plays have been made, check for win or tie
+pause board tiles once player chooses
+recognize and show with a tie if all 9 tiles are used without winning array
+switch to current player
+update board with message winner is "X" or "O"
+show reset button
+   
+ 
 
