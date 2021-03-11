@@ -3,15 +3,45 @@ const board = document.getElementById("board");
 
 class view {
     constructor() {
-        function init_view() {
+        this.row = generateElement('div', 'row', 'row align-items-start', board);
+        this.column = generateElement('div', 'column', 'row align-items-start', row)
+        this.grid = generateElement(div, )
 
-            board.innerHTML = '';
-          
-
-
-
+            
+            
+            
+            
+            
+            
+            
+            
         }
-
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    class model {
+        constructor() {
+            
+            
+        }
+        
+    }
+    
+    
+    
+    
+    class controller {
+        constructor({
+            
+            
+        })
+        
     }
 
 
@@ -24,25 +54,14 @@ class view {
 
 
 
-class model {
-    constructor() {
-
-
-    }
-
-
-}
 
 
 
 
 
-
-
-class controller {
-    constructor({
-
-
-    })
-
-}
+    this.gameState = 0
+    this.boardState = 
+    this.currentPlayer = 
+    this.winCombinations = 
+    this.message = 
+    this.resetButton = 

@@ -258,9 +258,13 @@ Display
   reset button  
 
 
-Model- logic
+Model- data
 
 Input function initialize game
+
+function init_game() {
+    
+    game_state = 0;
 
 Calculate current state of game by counting increment 
 
@@ -314,3 +318,58 @@ show reset button
    
  
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+more indepth
+
+
+
+
+
+Model- data
+  lass model {
+    constructor() {
+
+
+    }
+    
+}
+
+
+
+
+
+
+Calculate current state of game by counting increment 
+
+Call restartGame run gameState
+
+Create board state- create an array-  
+
+Create currentPlayer- X  
+
+Create playerNotification- Player X - Notes: changes after every turn ex: Player O
+
+
+Check current state of board to check for wins- keeps track of which tiles are available
+
+Check for open array to show all available spaces 
+
+switch to current player, whos turn it is
+
+declare function to check win or tie
+
+update list of all possible winning board tile combinations
+
+check winning combos to see if the given combinations/paused board state array match the given player... 
