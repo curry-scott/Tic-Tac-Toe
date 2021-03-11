@@ -217,11 +217,11 @@ what happens in initilize- game starts - shows
     reset button
 
 what is needed when initilizing to the board
-- game state- changes after each turn
-- board state- changes after each turn
-- current player- changes after each turn
-- Player notification - text on board of whos turn it is. switch back and forth X to O and O to X
-- reset button- always placed at same location. Can reset at anytime during the game
+- gameState- changes after each turn
+- boardState- changes after each turn
+- currentPlayer- changes after each turn
+- playerNotification - text on board of whos turn it is. switch back and forth X to O and O to X
+- resetButton- always placed at same location. Can reset at anytime during the game
 
 
 
@@ -235,10 +235,10 @@ Load empty board- how do you get it.. function what does
 create row of 3 
 create column of 3
 row and columns creat tiles
-    Create row, columns and tiles- createElement to create div (Bootstrap).-- Render 
+    Create row, columns and tiles- generateElement to create div (Bootstrap).-- Render 
 
 create an element for current game state
-  player notification - createElement --switched with each turn.  
+  player notification - generateElement --switched with each turn.  
 
 create reset button- 
   text on button- play game
@@ -246,22 +246,36 @@ create reset button-
 
 
 
+
+
+View
+
+Display
+  board
+    columns 3 
+    rows 3
+  players - start with X 
+  reset button  
+
+
 Model- logic
 
-function to initialize game- this needs to connect to start the game
+Input function initialize game
 
-track current state of game by counting positive number of turns- Need to know this to check winners and know which players turn 
+Calculate current state of game by counting increment 
 
-game state- what state starting on?- Counter starter and know current player turn
+Call restartGame run gameState
 
-board state- create an array-  
+Create board state- create an array-  
 
-current player- X  
+Create currentPlayer- X  
 
-player notification- Player X - Notes: changes after every turn ex: Player O
+Create playerNotification- Player X - Notes: changes after every turn ex: Player O
 
 
-current state of board to check for wins- keeps track of which tiles are available
+Check current state of board to check for wins- keeps track of which tiles are available
+
+Check for open array to show all available spaces 
 
 switch to current player, whos turn it is
 
@@ -269,22 +283,33 @@ declare function to check win or tie
 
 update list of all possible winning board tile combinations
 
-check winning combos to see if the given combinations/paused board state array match the given player... How? 
+check winning combos to see if the given combinations/paused board state array match the given player... 
+
 
 
     
 
 Controller
 
-update board adn tiles after each players turn
+function for tiles clicked
+
+
+change currentPlayer
+
+determine updated board and tiles after each players turn
+
 move the game forward on each clicks
-update game state
-update board
+
 when 5 or more plays have been made, check for win or tie
+
 pause board tiles once player chooses
+
 recognize and show with a tie if all 9 tiles are used without winning array
+
 switch to current player
+
 update board with message winner is "X" or "O"
+
 show reset button
    
  
