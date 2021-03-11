@@ -187,57 +187,54 @@ repeat until winner or tie
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 logic
 what happens in initilize
 when initialize, render first. know how many tiles
+what is needed when initilizing to the board
+- game state- changes after each turn
+- board state- changes after each turn
+- current player- changes after each turn
+- reset button- always placed at same location. Can reset at anytime during the game
+
+
 
 
  
 -View
--connects to board
-const board= document.getElementById("board")
-
-//Would i want to declare variables or would i want to do that in seperate in view, model and controller? Would that be this? If not:
-let gameState = gameState
-let currentPlayer = currentPlayer
-let boardState = boardState
-let resetButton = resetButton
-let winCombination = winCombination??  do i need this here bc it will be an array in model.
-
-need html elements
-function createElement(type, id, class) //Do I need more on this. Dive deeper in mdn in morning event listeners btn?
-let newElement = document.createElement(type);
-newElement.id = id
-newElement.setAttribute("class" class?)
-if (event) {
-  newElement.addEventListener(event ??)
-}
-if (parent) {                       //// more research
-  parent.appendChile(newElement);
-}
-return newElement
-
-
--load empty board- how do you get it.. function what does 
-
-function initView() {        //do i need to specify if im in view model or controller or init ok?.. 
-board.innerHTML = '';  //can i do a createElement for this and not have that div in html? Does createElement get rid of those in html? If so proceed.
-let row = createElement ( can I do bootstrap here as?) ("div", "row" "row align-items-start", board); // look right? 
-let column = createElement ("div", "column" "col", row);
-let grid = createElement ("div", "grid" "row", column); //would this be a parent?
-for (let i = 0; i < 9; i++) {
-  let newGrid = ("div", "i" "column", "grid", "tileClick");
-  newGrid.textContent = " ";
-}
-messageBoard = createElement ("header or h1", "messageBoard", board);
-reset button = createElement ("button", "resetButton", "button", board")
-resetButton.textContent = "Play Game";
-resetButton.addEventListener("click, init);
-}
-
+connects to board
+    const board= document.getElementById("board")
+Load empty board- how do you get it.. function what does 
+  function init(){ - initiate create object board. 
+  }
 create row of 3
 create column of 3
 row and columns creat tiles
+    for row columns and tiles- createElement to create div. 
+    
+
+
 create an element for current game state
 create reset button
 
