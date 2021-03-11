@@ -209,15 +209,19 @@ repeat until winner or tie
 
 
 
-logic
-what happens in initilize
-when initialize, render first. know how many tiles
+Identify objects in view
+what happens in initilize- game starts - shows
+    header
+    board- 3 X 3 grid
+    player notification- whos turn
+    reset button
+
 what is needed when initilizing to the board
 - game state- changes after each turn
 - board state- changes after each turn
 - current player- changes after each turn
+- Player notification - text on board of whos turn it is. switch back and forth X to O and O to X
 - reset button- always placed at same location. Can reset at anytime during the game
-
 
 
 
@@ -228,33 +232,29 @@ connects to board
 Load empty board- how do you get it.. function what does 
   function init(){ - initiate create object board. 
   }
-create row of 3
+create row of 3 
 create column of 3
 row and columns creat tiles
-    for row columns and tiles- createElement to create div. 
-    
-
+    for row columns and tiles- createElement to create div (Bootstrap).-- Render 
 
 create an element for current game state
+  player notification - createElement     --switched with each turn.  
+
 create reset button
-
-after each play 
-update board and tiles
-lock used tiles
-switch player
-
+  text on button- play game
+  addEventListener- reset button to reset at anytime during the game
 
 
 
 Model
 
 function to initialize game
-track current state of game by bounting positive number of turns... counter
-track current state of board to check for wins
+current state of game by bounting positive number of turns... counter
+current state of board to check for wins
 switch to current player, whos turn it is
 declare function to check win or tie
 update list of all possible winning board tile combinations
-check all winning combos to see if the given combinations/paused tiles in the board array
+check winning combos to see if the given combinations/paused tiles in the board array
     
 
 Controller
