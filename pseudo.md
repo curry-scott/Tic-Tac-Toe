@@ -204,9 +204,23 @@ let boardState = boardState
 let resetButton = resetButton
 let winCombination = winCombination??  do i need this here bc it will be an array in model.
 
+need html elements
+function createElement(type, id, class) //Do I need more on this. Dive deeper in mdn in morning event listeners btn?
+let newElement = document.createElement(type);
+newElement.id = id
+newElement.setAttribute("class" class?)
+if (event) {
+  newElement.addEventListener(event ??)
+}
+if (parent) {                       //// more research
+  parent.appendChile(newElement);
+}
+return newElement
+
 
 -load empty board- how do you get it.. function what does 
-function initView or better init_view() {        //do i need to specify if im in view model or controller.. 
+
+function initView() {        //do i need to specify if im in view model or controller or init ok?.. 
 board.innerHTML = '';  //can i do a createElement for this and not have that div in html? Does createElement get rid of those in html? If so proceed.
 let row = createElement ( can I do bootstrap here as?) ("div", "row" "row align-items-start", board); // look right? 
 let column = createElement ("div", "column" "col", row);
