@@ -208,9 +208,17 @@ let winCombination = winCombination??  do i need this here bc it will be an arra
 -load empty board- how do you get it.. function what does 
 function initView or better init_view() {        //do i need to specify if im in view model or controller.. 
 board.innerHTML = '';  //can i do a createElement for this and not have that div in html? Does createElement get rid of those in html? If so proceed.
-
-
+let row = createElement ( can I do bootstrap here as?) ("div", "row" "row align-items-start", board); // look right? 
+let column = createElement ("div", "column" "col", row);
+let grid = createElement ("div", "grid" "row", column); //would this be a parent?
+for (let i = 0; i < 9; i++) {
+  let newGrid = ("div", "i" "column", "grid", "tileClick");
+  newGrid.textContent = " ";
 }
+
+messageBoard = createElement ("header or h1", "messageBoard", board);
+}
+
 create row of 3
 create column of 3
 row and columns creat tiles
