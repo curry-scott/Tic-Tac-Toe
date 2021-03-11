@@ -215,8 +215,10 @@ for (let i = 0; i < 9; i++) {
   let newGrid = ("div", "i" "column", "grid", "tileClick");
   newGrid.textContent = " ";
 }
-
 messageBoard = createElement ("header or h1", "messageBoard", board);
+reset button = createElement ("button", "resetButton", "button", board")
+resetButton.textContent = "Play Game";
+resetButton.addEventListener("click, init);
 }
 
 create row of 3
