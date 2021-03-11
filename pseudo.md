@@ -194,6 +194,16 @@ when initialize, render first. know how many tiles
 
  
 View
+connects to board
+-const board= document.getElementById("board")
+
+//Would i want to declare variables or would i want to do that in seperate in view, model and controller? Would that be this? If not:
+let gameState = gameState
+let currentPlayer = currentPlayer
+let boardState = boardState
+let resetButton = resetButton
+let winCombination = winCombination??
+
 
 load empty board- how do you get it.. function what does 
 create row of 3
