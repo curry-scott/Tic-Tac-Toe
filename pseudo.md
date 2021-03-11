@@ -246,10 +246,18 @@ create reset button
 
 
 
-Model
+Model- telling what to do
 
 function to initialize game
-current state of game by bounting positive number of turns... counter
+count current state of game by counting positive number of turns. 
+game state- what state starting on?  = 0 
+board state- create an array 
+current player- X  
+player notification- Player X
+
+
+
+ 
 current state of board to check for wins
 switch to current player, whos turn it is
 declare function to check win or tie
