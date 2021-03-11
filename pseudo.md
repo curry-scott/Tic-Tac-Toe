@@ -230,39 +230,48 @@ what is needed when initilizing to the board
 connects to board
     const board= document.getElementById("board")
 Load empty board- how do you get it.. function what does 
-  function init(){ - initiate create object board. 
-  }
+  initiate create object board. 
+  
 create row of 3 
 create column of 3
 row and columns creat tiles
-    for row columns and tiles- createElement to create div (Bootstrap).-- Render 
+    Create row, columns and tiles- createElement to create div (Bootstrap).-- Render 
 
 create an element for current game state
-  player notification - createElement     --switched with each turn.  
+  player notification - createElement --switched with each turn.  
 
-create reset button
+create reset button- 
   text on button- play game
   addEventListener- reset button to reset at anytime during the game
 
 
 
-Model- telling what to do
+Model- logic
 
-function to initialize game
-count current state of game by counting positive number of turns. 
-game state- what state starting on?  = 0 
-board state- create an array 
+function to initialize game- this needs to connect to start the game
+
+track current state of game by counting positive number of turns- Need to know this to check winners and know which players turn 
+
+game state- what state starting on?- Counter starter and know current player turn
+
+board state- create an array-  
+
 current player- X  
-player notification- Player X
+
+player notification- Player X - Notes: changes after every turn ex: Player O
 
 
+current state of board to check for wins- keeps track of which tiles are available
 
- 
-current state of board to check for wins
 switch to current player, whos turn it is
+
 declare function to check win or tie
+
 update list of all possible winning board tile combinations
-check winning combos to see if the given combinations/paused tiles in the board array
+
+check winning combos to see if the given combinations/paused board state array match the given player... How? 
+
+
     
 
 Controller
