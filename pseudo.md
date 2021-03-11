@@ -193,19 +193,24 @@ when initialize, render first. know how many tiles
 
 
  
-View
-connects to board
--const board= document.getElementById("board")
+-View
+-connects to board
+const board= document.getElementById("board")
 
 //Would i want to declare variables or would i want to do that in seperate in view, model and controller? Would that be this? If not:
 let gameState = gameState
 let currentPlayer = currentPlayer
 let boardState = boardState
 let resetButton = resetButton
-let winCombination = winCombination??
+let winCombination = winCombination??  do i need this here bc it will be an array in model.
 
 
-load empty board- how do you get it.. function what does 
+-load empty board- how do you get it.. function what does 
+function initView or better init_view() {        //do i need to specify if im in view model or controller.. 
+board.innerHTML = '';  //can i do a createElement for this and not have that div in html? Does createElement get rid of those in html? If so proceed.
+
+
+}
 create row of 3
 create column of 3
 row and columns creat tiles
