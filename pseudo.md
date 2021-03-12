@@ -209,41 +209,46 @@ what is needed when initilizing to the board
 -View
 connects to board
     const board= document.getElementById("board")
-Load empty board- how do you get it.. function what does 
+Load empty board- how do you get it.. function  
   initiate create object board. 
   
 create row of 3 
 create column of 3
 row and columns creat tiles
-    Create row, columns and tiles- generateElement to create div (Bootstrap).-- Render 
+    Create row, columns and tiles- generateElement to create div (Bootstrap).// Render
 
 create an element for current game state
   player notification - generateElement --switched with each turn.  
+
+create an element to communicate current game state
 
 create reset button- 
   text on button- play game
   addEventListener- reset button to reset at anytime during the game
 
+ 
 
 
 Model- data
 
 Input function initialize game
 
-function init_game() {
+function initModel() {
     
-    game_state = 0;
+    gameState = 0;
 
-Calculate current state of game by counting increment 
+Calculate/Track current state of game by counting increment 
 
-Call restartGame run gameState
 
 Create board state- create an array-  
 
-Create currentPlayer- X  
+Declare function to check for win or tie
+
+Declare possible win combinations
+
+Create currentPlayer
 
 Create playerNotification- Player X - Notes: changes after every turn ex: Player O
-
 
 Check current state of board to check for wins- keeps track of which tiles are available
 
@@ -251,38 +256,30 @@ Check for open array to show all available spaces
 
 switch to current player, whos turn it is
 
-declare function to check win or tie
-
-update list of all possible winning board tile combinations
-
-check winning combos to see if the given combinations/paused board state array match the given player... 
-
-
-
-    
 
 Controller
 
-function for tiles clicked
+Initialize the game
+
+Set view to start
+  initView
+
+set game logic to start
+  initModel
+
+Update game, board, players when a player plays
+
+Check for win or tie when =>5 plays have been made
+
+Lock board tiles, players and buttons 
+
+Switch to current player
+
+Message win or tie when win combination occurs or all tiles are locked
+
+Show reset button
 
 
-change currentPlayer
-
-determine updated board and tiles after each players turn
-
-move the game forward on each clicks
-
-when 5 or more plays have been made, check for win or tie
-
-pause board tiles once player chooses
-
-recognize and show with a tie if all 9 tiles are used without winning array
-
-switch to current player
-
-update board with message winner is "X" or "O"
-
-show reset button
    
  
 
