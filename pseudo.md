@@ -3,8 +3,6 @@ MVC
 2.model
 3.controller
 
-
-
 1. What goes in view
 container
     row 
@@ -30,10 +28,6 @@ container
         restart button
 
     modal(who the winner or tie)        
-
-
-
-
 
 2. What goes in model
 
@@ -84,9 +78,6 @@ need to know who won
         children can  have many siblings
 
 
-
-
-
 tiles could have states
     true/false to dictate tile clickability. Boolean
        on finish of game, lock the tiles.
@@ -114,17 +105,6 @@ set tile clickability for all tiles
 display the final game state
 display the final game start
 restart click event listener
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -246,18 +226,6 @@ create reset button-
 
 
 
-
-
-View
-
-Display
-  board
-    columns 3 
-    rows 3
-  players - start with X 
-  reset button  
-
-
 Model- data
 
 Input function initialize game
@@ -331,45 +299,7 @@ show reset button
 
 
 
-more indepth
 
 
 
 
-
-Model- data
-  lass model {
-    constructor() {
-
-
-    }
-    
-}
-
-
-
-
-
-
-Calculate current state of game by counting increment 
-
-Call restartGame run gameState
-
-Create board state- create an array-  
-
-Create currentPlayer- X  
-
-Create playerNotification- Player X - Notes: changes after every turn ex: Player O
-
-
-Check current state of board to check for wins- keeps track of which tiles are available
-
-Check for open array to show all available spaces 
-
-switch to current player, whos turn it is
-
-declare function to check win or tie
-
-update list of all possible winning board tile combinations
-
-check winning combos to see if the given combinations/paused board state array match the given player... 
