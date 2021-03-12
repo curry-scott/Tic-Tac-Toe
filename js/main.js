@@ -8,19 +8,12 @@ function generateElement(type, id, classList, event = false, eventListenerFuncti
     let newElement = document.createElement(type);
     newElement.id = id;
     newElement.setAttribute('class', classList);
-    if (event) {
-        newElement.addEventListener(event);
+    if (){
+
     }
-    // would i need parent here? 
-        
-    }
-    return newElement;
-}
-    
-}
-}
-return newElement;
-}
+
+
+
 
 
 // declare function  retrieve html elements -- Can i make this into class, constructor, this.??
